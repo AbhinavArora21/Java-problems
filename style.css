@@ -1,0 +1,108 @@
+:root{
+    --color-primary: rgb(19, 82, 218);
+    --color-secondary: #353333;
+    --color-white: #ffffff;
+    --color-black:#000000;
+    --shadow:0 0 14px rgba(0, 0, 0, 0.8);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-primary);
+  }
+  .container {
+    width: 400px;
+    text-align: center;
+    background: var(--color-white);
+    padding: 30px 10px;
+    box-shadow: var(--shadow);
+    position: relative;
+    border-radius: 5px;
+  }
+  .container .text {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+  }
+  .display {
+    padding: 15px 0;
+    padding-right: 3px;
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .display input {
+    height: 40px;
+    width: 95%;
+    border: 1px solid var(--color-secondary);
+    border-radius: 3px;
+    pointer-events: none;
+    user-select: none;
+  }
+  input[type="text"] {
+    padding-left: 20px;
+    font-size: 20px;
+  }
+  .display span {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: var(--color-secondary);
+    cursor: pointer;
+  }
+  .display .far:active {
+    font-size: 27px;
+  }
+  .display .fas,
+  .display .far {
+    display: none;
+  }
+  .container button {
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 90%;
+    background: var(--color-primary);
+    border: none;
+    color: var(--color-white);
+    border-radius: 3px;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    cursor: pointer;
+    outline: none;
+  }
+  button:active {
+    transform: scale(0.995);
+    background: var(--color-primary);
+  }
+  
+  #github {
+    position: absolute;
+    bottom: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    right: 20px;
+    color: var(--color-black);
+  }
+  #github:hover {
+    color: var(--color-white);
+  }
+  
