@@ -1,3 +1,3 @@
 # Java-problems
 
-## Java Practice Problem
+### Java Practice Problem
