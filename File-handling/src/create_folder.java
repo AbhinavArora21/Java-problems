@@ -18,10 +18,27 @@ public class create_folder {
          return (f.exists());
     }
 
+//    rename folder
+    public static void renameFolder(String oldpath, String newpath){
+        File oldFolder = new File(oldpath);
+        File newFolder = new File(newpath);
+
+        if (oldFolder.exists()){
+            oldFolder.renameTo(newFolder);
+            System.out.println("folder renamed to:" + newFolder);
+        }
+    }
+
+
+
     public static void main(String[] args) {
-        String f = "D:\\Java-Code\\Java-problems\\file-handling-result";
+//        String f = "D:\\Java-Code\\Java-problems\\file-handling-result";
 //        createFolder(f);
-        boolean result = checkFolder(f);
-        System.out.println(result);
+//        boolean result = checkFolder(f);
+//        System.out.println("folder exist :"+result);
+        String old_path = "D:\\Java-Code\\Java-problems\\file-handling-resultt";
+        String new_path = "D:\\Java-Code\\Java-problems\\file-handling-result";
+        renameFolder(old_path,new_path);
+        System.out.println("folder renamed to : " + new_path);
     }
 }
