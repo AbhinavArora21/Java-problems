@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/File-handling/File-handling.iml" filepath="$PROJECT_DIR$/File-handling/File-handling.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java-problems.iml" filepath="$PROJECT_DIR$/Java-problems.iml" />
       <module fileurl="file://$PROJECT_DIR$/LBP-JAVA/LBP-JAVA.iml" filepath="$PROJECT_DIR$/LBP-JAVA/LBP-JAVA.iml" />
     </modules>
